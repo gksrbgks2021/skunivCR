@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org" >
-<head>
-    <meta charset="UTF-8">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:width="http://www.w3.org/1999/xhtml">
 <style>
     .fieldError {
         border-color: #f61026;
@@ -85,6 +83,10 @@
     }
 
 </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" >
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -98,7 +100,7 @@
         </div>
         <div class="login__box">
             <div class="form-group">
-                <label th:for="name">학번</label>
+                <label th:for="name">이름</label>
                 <input type="text" th:field="*{id}" class="form-control" id="name"
                        th:errorclass="field-error">
                 <div class="field-error" th:errors="*{id}"/>
@@ -123,6 +125,7 @@
         </div>
     </form>
     <br/>
+
 </div>
 </body>
 </html>
