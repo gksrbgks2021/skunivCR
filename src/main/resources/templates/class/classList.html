@@ -4,224 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-
-        header div {
-            text-decoration: black;
-
-        }
-
-        .modal {
-            overflow-y: auto;
-        }
-
-        .my-card {
-            background-color: red !important;
-        }
-
-        #text-list span {
-            display: block;
-        }
-
-        .spanlist {
-            float: left;
-            margin-left: 10px;
-        }
-
-        .aside1 {
-            margin-top: 20px;
-        }
-
-        header {
-            /*border: 1px solid red;*/
-            height: 85px;
-            background-color: rgba(173, 185, 255, 0.26);
-        }
-
-        section:nth-child(1) {
-            /*border: 1px solid green;*/
-            height: 450px;
-            background-color: rgba(122, 180, 235, 0.1);
-        }
-
-        section:nth-child(2) {
-            /*border: 1px solid black;*/
-            height: 450px;
-            background-color: rgba(122, 180, 235, 0.15);
-        }
-
-        /*사용자정보*/
-        .normal {
-            font-weight: bolder;
-            font-size: 18px;
-            text-align: left;
-            color: lightslategray;
-        }
-
-        .credits-now {
-            font-weight: bold;
-            font-size: 18px;
-            text-align: left;
-            text-decoration-line: underline;
-            text-decoration-thickness: 2px;
-            text-decoration-color: mediumslateblue;
-            color: navy;
-        }
-
-        /*장바구니 담긴 과목 텍스트 스타일 지정*/
-        .type-1 {
-            font-weight: bold;
-            font-size: 25px;
-            text-decoration-line: underline;
-            text-align: center;
-            color: ghostwhite;
-            text-shadow: 1px 1px rgba(0, 0, 83, 0.67);
-        }
-
-        .type-2 {
-            font-size: 16px;
-            font-weight: lighter;
-            font-style: italic;
-            text-align: right;
-            color: ghostwhite;
-            text-shadow: 1px 1px rgba(0, 0, 83, 0.67);
-        }
-
-        .type-3 {
-            font-size: 18px;
-            font-weight: lighter;
-            text-align: left;
-            color: ghostwhite;
-            text-shadow: 1px 1px rgba(0, 0, 83, 0.67);
-        }
-
-        .type-4 {
-            font-size: 20px;
-            text-align: left;
-            font-weight: bold;
-            color: ghostwhite;
-            text-shadow: 1px 1px rgba(0, 0, 83, 0.67);
-        }
-
-        .type-5 {
-            font-size: 18px;
-            font-weight: lighter;
-            text-align: left;
-            color: ghostwhite;
-            text-shadow: 1px 1px rgba(0, 0, 83, 0.67);
-        }
-
-        .type-6 {
-            font-size: 15px;
-            font-weight: lighter;
-            text-align: left;
-            color: #ffffff;
-            text-shadow: 1px 1px rgba(0, 0, 83, 0.67);
-        }
-
-        #section-second div nav {
-            margin-left: 235px;
-        }
-
-        .bluebox {
-            border: #82cbff 2px solid;
-        }
-
-        .btn.btn-primary {
-            color: ghostwhite;
-            font-weight: bold;
-        }
-
-        /*로그아웃 버튼*/
-        .button {
-            display: inline-block;
-            border-radius: 4px;
-            background-color: #ff4452;
-            border: none;
-            color: ghostwhite;
-            text-align: center;
-            font-size: 18px;
-            text-shadow: 1px 1px #f61026;
-            padding: 15px;
-            width: 130px;
-            transition: all 0.4s;
-            cursor: pointer;
-            margin: 13px;
-        }
-
-        .button span {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.5s;
-        }
-
-        .button span:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
-
-        .button:hover span {
-            padding-right: 25px;
-        }
-
-        .button:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
-        .btn-default{
-            background-color: #3486ff;
-            color: ghostwhite;
-            /*text-shadow: 1px 1px rgba(0, 0, 0, 0.5);*/
-        }
-
-        /*유의사항 스타일*/
-        .modal-title {
-            font-size: 25px;
-            font-weight: bold;
-            color: tomato;
-            text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-        }
-
-        .h6-style {
-            font-weight: bold;
-            font-size: 20px;
-            color: coral;
-        }
-
-        .important {
-            font-size: 15px;
-            font-weight: bold;
-            color: #ff7685;
-        }
-
-        .example{
-            font-size: 15px;
-            font-weight: bold;
-            color: cornflowerblue;
-        }
-
-        .less-important {
-            font-size: 13px;
-            font-weight: bold;
-            color: rgba(0, 0, 0, 0.5);
-        }
-
-    </style>
+    <link rel="stylesheet" href="/css/classList.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
 
 </head>
-
 <body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-
 <header>
     <button class="button" onclick="location.href='/logout'" style="vertical-align:middle; float:right;">
         <span>로그아웃</span></button>
@@ -245,7 +33,7 @@
     <!-- 유의사항/ 수강신청 검색 목록 -->
     <section>
         <div class="container">
-            <div>
+            <div class="" style="overflow-y: scroll; height:23rem;">
                 <table class="table table-striped">
                     <thead>
                     <tr>
@@ -262,29 +50,28 @@
                         <th>강의시간</th>
                     </tr>
                     </thead>
+                    <tbody>
+                    <tr th:each="class : ${classes}">
+                        <div class="row">
+                            <td th:text="${class.className}"></td>
+                            <td th:text="${class.id}"></td>
+                            <td th:text="${class.division}"></td>
+                            <td th:text="${class.distribution}"></td>
+                            <td th:text="${class.credit}"></td>
+                            <td th:text="${class.professor}"></td>
+                            <td th:text="${class.curStudent}"></td>
+                            <td th:text="${class.maxStudent}"></td>
+                            <td th:text="${class.lectureRoom}"></td>
+                            <td th:text="${class.time}"></td>
+                            <td>
+                                <button th:onclick="postTodo([[${class}]])">신청</button>
+                            </td>
+                        </div>
+                    </tr>
+                    </tbody>
                 </table>
-                <div class="" style="overflow-y: scroll; height:23rem;">
-                    <table class="table table-striped">
-                        <tbody>
-                        <tr th:each="class : ${classes}">
-                            <div class="row">
-                                <td th:text="${class.id}"></td>
-                                <td th:text="${class.className}"></td>
-                                <td th:text="${class.division}"></td>
-                                <td th:text="${class.distribution}"></td>
-                                <td th:text="${class.credit}"></td>
-                                <td th:text="${class.professor}"></td>
-                                <td th:text="${class.curStudent}"></td>
-                                <td th:text="${class.maxStudent}"></td>
-                                <td th:text="${class.lectureRoom}"></td>
-                                <td th:text="${class.time}"></td>
-                            </div>
-                        </tr>
-                        </tbody>
-                </div>
-                </table>
-            </div>
-        </div><!-- /container -->
+            </div><!-- /container -->
+        </div>
         <hr/>
     </section>
     <!--장바구니, 프로필, 신청완료 과목 -->
@@ -378,7 +165,6 @@
                     <div th:if="${session.loginMember != null}" class="container col-sm-2 spanlist aside1">
                         <div class="card bg-light mb-3" style="max-width: 18rem;">
                             <div class="card-body">
-                                <h5 class="card-title" th:text="${class.id}">#</h5>
                                 <div class="card-text" width="50px;" id="text-list">
                                     <div class="normal">
                                         <span>학번 : </span>
@@ -393,12 +179,13 @@
                                         <span th:text="${session.loginMember.maxCredits}"></span>
                                         <span>최대수강신청학점: </span>
                                         <span th:text="${session.loginMember.minCredits}"></span>
+                                        <span>현재수강신청학점: </span>
+                                        <span th:text="${session.loginMember.minCredits}"></span>
                                     </div>
                                     <div class="credits-now">
                                         <span>현재수강신청학점: </span>
                                         <span th:text="${session.loginMember.nowCredits}"></span>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -444,5 +231,15 @@
         </div>
     </section>
 </main>
+<script>
+    // ajax로 포스트 돌리는것.
+    function postTodo(classJson) {
+        let xhr = new XMLHttpRequest();
+        xhr.open('post', 'http://localhost:8080/register');
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        console.log(JSON.stringify(classJson))
+        xhr.send(JSON.stringify(classJson));
+    }
+</script>
 </body>
 </html>
