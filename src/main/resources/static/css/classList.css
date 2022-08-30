@@ -39,7 +39,7 @@ section:nth-child(1) {
 section:nth-child(2) {
     /*border: 1px solid black;*/
     height: 450px;
-    background-color: rgba(122, 180, 235, 0.15);
+    background-color: rgba(122, 180, 235, 0.1);
 }
 
 /*사용자정보*/
