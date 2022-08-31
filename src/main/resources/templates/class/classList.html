@@ -22,7 +22,6 @@
                 <table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>#</th>
                         <th>교과목명</th>
                         <th>학수번호</th>
                         <th>이수구분</th>
@@ -127,7 +126,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-bs-dismiss="modal">확인완료</button>
+                                <button type="button" class="btn btn-default" data-bs-dismiss="modal">확인</button>
                             </div>
                         </div>
                     </div>
@@ -165,6 +164,10 @@
                                         <span>최대수강신청학점: </span>
                                         <span th:text="${session.loginMember.minCredits}"></span>
                                         <span>현재수강신청학점: </span>
+                                        <span th:text="${session.loginMember.minCredits}"></span>
+                                    </div>
+                                    <div class="credits-now">
+                                        <span>현재수강신청학점: </span>
                                         <span th:text="${session.loginMember.nowCredits}"></span>
                                     </div>
                                 </div>
@@ -201,6 +204,7 @@
                                             <span th:text="${class.time}"/>강의 시간</span><br/>
                                         </div>
                                     </div>
+                                </tr>
                             </div>
                         </a>
                     </div>
