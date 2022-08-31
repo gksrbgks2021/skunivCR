@@ -52,12 +52,25 @@ section:nth-child(2) {
 
 .credits-now {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: mediumslateblue;
     color: navy;
+}
+#card-mytext > span {
+    display: inline;
+}
+#card-mytext > span:nth-child(2n+1) {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    color: navy;
+}
+#card-mytext > span:nth-child(2n)::after {
+    content:"";
+    display: block;
 }
 
 /*장바구니 담긴 과목 텍스트 스타일 지정*/
@@ -165,7 +178,8 @@ section:nth-child(2) {
     opacity: 1;
     right: 0;
 }
-.btn-default{
+
+.btn-default {
     background-color: #3486ff;
     color: ghostwhite;
     /*text-shadow: 1px 1px rgba(0, 0, 0, 0.5);*/
@@ -191,7 +205,7 @@ section:nth-child(2) {
     color: #ff7685;
 }
 
-.example{
+.example {
     font-size: 15px;
     font-weight: bold;
     color: cornflowerblue;
@@ -201,4 +215,9 @@ section:nth-child(2) {
     font-size: 13px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.5);
+}
+
+/*박스 시각화*/
+.tbox {
+    border: red 2px solid;
 }
